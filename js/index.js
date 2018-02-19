@@ -27,6 +27,12 @@ $(document).ready(function() {
 
 
 
+
+
+    }
+    //增加准备动作 使动画更加协调
+    $("#sliderNav .prev").on('click', moveprev());
+
     function moveprev() {
         var temp = $(".photoContainer li:last-child").clone();
         $(".photoContainer li:last-child").remove();
