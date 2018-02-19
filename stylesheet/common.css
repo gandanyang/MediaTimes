@@ -1,0 +1,240 @@
+/*首页页首css*/
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #EFF2F5;
+    font-family: PingFangSC-Regular;
+}
+
+nav {
+    height: 60px;
+}
+
+.fc000 {
+    color: #000;
+}
+
+.fcfff {
+    color: #fff;
+}
+
+a {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.nav {
+    padding: 0 10%;
+    height: 100%;
+    background: #272727;
+}
+
+.nav ul li {
+    float: left;
+    display: inline-block;
+    color: #fff;
+    height: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+li>div {
+    line-height: 60px;
+    height: 60px;
+    display: inline-block;
+}
+
+.mlr25 {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.mlrat {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plr25 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/* .navItem {
+    width: 120px;
+} */
+
+.navItem:hover {
+    height: 57px;
+    cursor: pointer;
+    border-bottom: 3px solid #F9BE04;
+    transition: all .5s;
+}
+
+.navItem:hover a {
+    font-weight: bold;
+    color: #F9BE04;
+}
+
+.navItem a {
+    vertical-align: middle;
+}
+
+.searchBar {
+    padding: 6px 0;
+    margin: 14px 0;
+    background: #fff;
+}
+
+.searchType {
+    color: #707070;
+    border-color: #fff;
+    margin-left: 5px;
+}
+
+.searchContent {
+    border: none;
+    border-left: 1px solid #CECECE;
+}
+
+.goSearch {
+    background: url('../images/icon_search.png');
+    width: 20px;
+    height: 21px;
+    line-height: 21px;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
+
+
+/**头部banner部分**/
+
+header {
+    height: 325px;
+    margin: 20px 10%;
+}
+
+.img-slider-content {
+    width: 430px;
+    height: 100%;
+}
+
+.photoContainer {
+    transition: left 1s;
+    left: 0;
+    width: 430px;
+    height: 325px;
+    overflow: hidden;
+}
+
+.sidePicContent {
+    margin-left: 5px;
+    width: 430px;
+    height: 325px;
+}
+
+.sildePic {
+    float: left;
+    width: 430px;
+    height: 325px;
+}
+
+.sliderNav {
+    width: 430px;
+    z-index: 10;
+    top: 130px;
+}
+
+.prev {
+    width: 50px;
+    height: 50px;
+    background: url("../images/icon_arrow_drop_down.png");
+    background-size: 100%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.next {
+    width: 50px;
+    height: 50px;
+    background: url("../images/icon_arrow_drop_down.png");
+    background-size: 100%;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
+.picIconPointer {
+    width: 70px;
+    z-index: 10;
+    top: -75px;
+    left: 160px;
+}
+
+.picIcon {
+    height: 8px;
+    width: 8px;
+    background: #F9BE04;
+    border-radius: 50%;
+}
+
+.picIcon.onshow {
+    background: #F9BE04;
+    border-radius: 25px;
+}
+
+.sliderSlogan {
+    text-align: center;
+    top: 277px;
+    height: 48px;
+    background: rgba(0, 0, 0, 0.6);
+    width: 430px;
+}
+
+.sliderSlogan strong {
+    color: #ff0000;
+    line-height: 48px;
+}
+
+.sliderSlogan a {
+    line-height: 48px;
+}
+
+.sidePic {
+    width: 190px;
+    height: 160px;
+}
+
+.sidePic img {
+    width: 190px;
+    height: 160px;
+}
+
+.sidePicSlogan {
+    background: rgba(0, 0, 0, 0.6);
+    top: 100px;
+    height: 60px;
+    text-align: center;
+}
+
+.sidePicSlogan a {
+    margin: 8px 10px 10px 11px;
+    overflow: hidden;
+    line-height: 21px;
+}
+
+header aside {
+    float: left;
+    width: 280px;
+    height: 320px;
+}
+
+header aside a {
+    font-size: 14px;
+    color: #363636;
+    line-height: 25px;
+    white-space: nowrap;
+}
