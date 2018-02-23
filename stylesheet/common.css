@@ -244,3 +244,7 @@ header aside a {
     line-height: 25px;
     white-space: nowrap;
 }
+
+main {
+    margin: 20px 10%;
+}
