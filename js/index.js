@@ -8,16 +8,16 @@ $(document).ready(function() {
         // $("#sliderNav .next").on('click', movenext());
     $(".sliderNav .next").click(moveNext);
     //定时器，定时进行切换
-    // $('.img-slider-content').hover(function() {    
-    //     clearInterval(timer);    
-    // }, function() {        
-    //     timer = setInterval(function() {       
-    //         moveNext();
-    //         // showPic(index);        
-    //         // index++;        
-    //         // if (index == len) { index = 0; }        
-    //     }, 3000); 
-    // }).trigger('mouseleave');
+    $('.img-slider-content').hover(function() {    
+        clearInterval(timer);    
+    }, function() {        
+        timer = setInterval(function() {       
+            moveNext();
+            // showPic(index);        
+            // index++;        
+            // if (index == len) { index = 0; }        
+        }, 4000); 
+    }).trigger('mouseleave');
     $(".sliderNav .prev").click(movePrev);
 
     function movePrev() {
