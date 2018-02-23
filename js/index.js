@@ -1,39 +1,32 @@
 $(document).ready(function() {
-    $('.picIcon').on('click', clickpicIcon());
+    // $('.picIcon').on('click', clickpicIcon());
 
-    function picIcon() {
+    // function picIcon() {
 
-    }
-    $("#sliderNav .next").on('click', movenext());
-
-    function movenext() {
-        $(".photoContainer li:first-child").animate({
-            marginLeft: "-430px"
-        }, 1000, function() {
-            var temp = $(this).clone();
-            $(this).remove();
-            temp.css({
-                marginLeft: "0"
+    // }
+    // $("#sliderNav .next").on('click', movenext());
+    $("#sliderNav .next").click = function movenext() {
+            console.log(123);
+            $(".photoContainer li:first-child").animate({
+                marginLeft: "-430px"
+            }, 1000, function() {
+                var temp = $(this).clone();
+                $(this).remove();
+                temp.css({
+                    marginLeft: "0"
+                });
+                $(".photoContainer").append(temp);
+                // console.log(this);
+                // var index = (this.dataset.index + 1) % 4;
+                // console.log(index);
+                // $('.photoContainer li:eq(2)').css({
+                //     marginLeft: "-860px"
+                // })
             });
-            $(".photoContainer").append(temp);
-            console.log(this);
-            var index = (this.dataset.index + 1) % 4;
-            console.log(index);
-            // $('.photoContainer li:eq(2)').css({
-            //     marginLeft: "-860px"
-            // })
-        });
-
-
-
-
-
-
-    }
-    //增加准备动作 使动画更加协调
-    $("#sliderNav .prev").on('click', moveprev());
-
-    function moveprev() {
+        }
+        //增加准备动作 使动画更加协调
+    $("#sliderNav .next").click = function moveprev() {
+        console.log(456);
         var temp = $(".photoContainer li:last-child").clone();
         $(".photoContainer li:last-child").remove();
         temp.css({
