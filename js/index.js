@@ -7,7 +7,6 @@ $(document).ready(function() {
         })
         // $("#sliderNav .next").on('click', movenext());
     $(".sliderNav .next").click(moveNext);
-
     //定时器，定时进行切换
     // $('.img-slider-content').hover(function() {    
     //     clearInterval(timer);    
@@ -19,8 +18,6 @@ $(document).ready(function() {
     //         // if (index == len) { index = 0; }        
     //     }, 3000); 
     // }).trigger('mouseleave');
-
-
     $(".sliderNav .prev").click(movePrev);
 
     function movePrev() {
@@ -37,7 +34,7 @@ $(document).ready(function() {
         console.log(index);
 
         $('.picIcon').removeClass("onshow");
-        $(this).addClass("onshow");
+        $('').addClass("onshow");
     }
 
     function moveNext() {

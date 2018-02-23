@@ -248,3 +248,14 @@ header aside a {
 main {
     margin: 20px 10%;
 }
+
+.headerAsideNotice {
+    background: #206698;
+    width: 92px;
+    height: 32px;
+    text-align: center;
+}
+
+.headerAsideNotice h5 {
+    line-height: 32px;
+}
