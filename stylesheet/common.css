@@ -33,15 +33,19 @@ a {
 }
 
 .nav ul li {
+    width: 164px;
     float: left;
-    display: inline-block;
+    display: block;
     color: #fff;
     height: 60px;
     height: 60px;
     line-height: 60px;
+    margin-left: 10px;
 }
 
-li>div {
+.navItem {
+    text-align: center;
+    width: 164px;
     line-height: 60px;
     height: 60px;
     display: inline-block;
@@ -168,13 +172,14 @@ header {
 }
 
 .picIconPointer {
-    width: 70px;
+    width: 120px;
     z-index: 10;
     top: -75px;
     left: 160px;
 }
 
 .picIcon {
+    transition: width .5s;
     height: 8px;
     width: 8px;
     background: #F9BE04;
@@ -182,8 +187,9 @@ header {
 }
 
 .picIcon.onshow {
-    background: #F9BE04;
     border-radius: 25px;
+    background: #F9BE04;
+    width: 20px;
 }
 
 .sliderSlogan {

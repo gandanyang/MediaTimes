@@ -359,6 +359,11 @@ select {
     height: 100%
 }
 
+.mlrat {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /*边距*/
 
