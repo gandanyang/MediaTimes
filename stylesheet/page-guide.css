@@ -125,3 +125,12 @@ span {
     height: 32px;
     text-align: center;
 }
+
+.headerAsideLatest {
+    margin-top: 20px;
+    border-radius: 4px;
+    background: #F9BE04;
+    width: 92px;
+    height: 32px;
+    text-align: center;
+}

@@ -10,10 +10,10 @@ $(document).ready(function() {
 
     function picIonshow(i) {
         $('.picIcon:eq(' + i + ')').addClass("onshow").siblings().removeClass("onshow");
-        $('.sliderSlogan:eq(' + i + ')').fadeIn(200).siblings().fadeOut(200);
+        $('.sliderSlogan:eq(' + i + ')').fadeIn(500).siblings().fadeOut(500);
         var $temp = $('.photoContainer li:eq(' + i + ')');
         // $temp.addClass("onShow").siblings().removeClass("onShow");
-        $temp.fadeIn(200).siblings().fadeOut(200);
+        $temp.fadeIn(500).siblings().fadeOut(500);
     }
     //定时器，定时进行切换
     // $('.img-slider-content').hover(function() {
@@ -42,8 +42,6 @@ $(document).ready(function() {
         index++;
         index = index > 3 ? 0 : index;
         picIonshow(index);
-
-
         // $(this).addClass("active").siblings("span").removeClass("active");
         // $(".photoContainer li:first-child").animate({
         //     marginLeft: "-430px"
