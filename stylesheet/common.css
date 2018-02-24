@@ -73,7 +73,7 @@ a {
     transition: all .5s;
 }
 
-.navItem:hover a {
+.navItem.active a {
     font-weight: bold;
     color: #F9BE04;
 }
@@ -257,6 +257,26 @@ aside a {
     white-space: nowrap;
 }
 
+.headerAsideHot {
+    background: #206698;
+    margin-top: 20px;
+    border-radius: 4px;
+    width: 92px;
+    height: 32px;
+    text-align: center;
+}
+
+.hotSpot li {
+    display: inline-block;
+    margin: 0;
+    white-space: normal;
+    display: inline;
+}
+
+.hotSpot li::before {
+    content: none;
+}
+
 .headerAsideNotice {
     border-radius: 4px;
     background: #206698;
@@ -317,4 +337,175 @@ aside li:before {
     width: 8px;
     border-radius: 50%;
     display: inline-block;
+}
+
+.mainTitle {
+    width: 200px;
+}
+
+.mainTitle h4 {
+    color: #363636;
+    font-weight: 800;
+}
+
+main {
+    margin: 20px 10%;
+}
+
+.mainContianer li {
+    width: 190px;
+    height: 230px;
+    float: left;
+    margin-right: 7px;
+    margin-right: 20px;
+}
+
+.mainPic {
+    height: 200px;
+    transition: background 1s;
+    padding: 13px;
+}
+
+main li:hover .mainPic {
+    background: #fff;
+}
+
+main li img {
+    width: 190px;
+    height: 156px;
+    display: block;
+}
+
+.mainPicStatement {
+    display: block;
+    width: 190px;
+    font-size: 14px;
+    color: #363636;
+    line-height: 21px;
+}
+
+.mainContianer {
+    width: 900px;
+}
+
+article {
+    width: 1440px;
+    height: 230px;
+    margin: 20px 10% 69px 10%;
+}
+
+.articleTitle {
+    margin: 17px 0 5px 0;
+    width: 92px;
+    height: 32px;
+    background: #206698;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.articleTitle a {
+    line-height: 32px;
+}
+
+article aside {
+    width: 280px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+article aside {
+    float: left;
+}
+
+article aside li {
+    margin-bottom: 12.1px;
+}
+
+footer {
+    background: #272727;
+    width: 80%;
+    padding: 0 10%;
+    height: 190px;
+}
+
+.navBottom {
+    text-align: center;
+    height: 113px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navBottom ul {
+    padding-top: 38px;
+    width: 289px;
+}
+
+.navBottom ul a,
+span {
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navBottom .searchBar {
+    top: -40px;
+    left: 490px;
+}
+
+.copyright span {
+    opacity: 0.5;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-right: 73px;
+    line-height: 74px;
+}
+
+.headerAsideLatest {
+    background: #52A3FF;
+    margin-top: 20px;
+    border-radius: 4px;
+    width: 92px;
+    height: 32px;
+    text-align: center;
+}
+
+article {
+    height: 400px;
+}
+
+.focusContainer {
+    width: 940px;
+    height: 400px;
+}
+
+.menuBar {
+    margin-right: 10px;
+    width: 98%;
+    border-bottom: 2px solid #F9BE04;
+}
+
+.menuBar li.onchoose {
+    background: #F9BE04;
+}
+
+.menuBar a {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #363636;
+    line-height: 40px
+}
+
+.focusContent li {
+    padding-top: 16.6px;
+}
+
+.focusContent a,
+.focusContent span {
+    font-size: 14px;
+    color: #363636;
+    line-height: 20px;
+}
+
+.more {
+    color: #206698 !important;
 }

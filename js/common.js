@@ -1,7 +1,15 @@
 $(document).ready(function() {
-    /**图片id */
-    $(".photoContainer li").eq(0).show();
 
+    $(".photoContainer li").eq(0).show();
+    $('.focusContent:eq(0)').show();
+    $('.menuBar li').on('click', function() {
+        $(this).addClass("onchoose").siblings().removeClass("onchoose");
+        var index = this.dataset.index;
+        $('.focusContent').eq(index).show().siblings().hide();
+    })
+    $('.menuBar a').on('click', function(e) {
+        e.preventDefault();
+    })
     $('.picIcon').click(function(e) {
         index = this.dataset.index;
         picIonshow(index);
@@ -26,8 +34,7 @@ $(document).ready(function() {
     //         // if (index == len) { index = 0; }
     //     }, 4000); 
     // }).trigger('mouseleave');
-    // $(".sliderNav .next").click(moveNext);
-    // $(".sliderNav .prev").click(movePrev);
+    /**图片id */
     var index = 0;
 
     function movePrev() {
@@ -42,22 +49,5 @@ $(document).ready(function() {
         index++;
         index = index > 3 ? 0 : index;
         picIonshow(index);
-        // $(this).addClass("active").siblings("span").removeClass("active");
-        // $(".photoContainer li:first-child").animate({
-        //     marginLeft: "-430px"
-        // }, 1000, function() {
-        //     var temp = $(this).clone();
-        //     $(this).remove();
-        //     temp.css({
-        //         marginLeft: "0"
-        //     });
-        //     $(".photoContainer").append(temp);
-        //     // console.log(this);
-        //     // var index = (this.dataset.index + 1) % 4;
-        //     // console.log(index);
-        //     // $('.photoContainer li:eq(2)').css({
-        //     //     marginLeft: "-860px"
-        //     // })
-        // });
     }
 });
