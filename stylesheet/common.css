@@ -265,6 +265,9 @@ aside a {
     text-align: center;
 }
 
+.headerAsideMonthly a,
+.headerAsideLatest a,
+.headerAsideSurvey a,
 .headerAsideNotice a {
     line-height: 32px;
 }
@@ -278,21 +281,31 @@ aside a {
 }
 
 .headerAsideSurvey a {
-    line-height: 32px;
     color: #363636;
 }
 
-.notice li {
+aside li {
     margin: 12px 0;
 }
 
-.notice li:before {
+.notice li::before {
+    background-color: #206698;
+}
+
+.mothly li::before,
+.comment li::before {
+    background-color: #52A3FF;
+}
+
+.survey li::before {
+    background: #F9BE04;
+}
+
+aside li:before {
     content: "";
     margin-left: 12px;
     height: 8px;
     width: 8px;
-    background-color: #206698;
-    /* border: 4px solid #206698; */
     border-radius: 50%;
     display: inline-block;
 }

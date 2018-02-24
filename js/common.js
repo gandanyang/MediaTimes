@@ -10,10 +10,10 @@ $(document).ready(function() {
 
     function picIonshow(i) {
         $('.picIcon:eq(' + i + ')').addClass("onshow").siblings().removeClass("onshow");
-        $('.sliderSlogan:eq(' + i + ')').fadeIn(500).siblings().fadeOut(500);
+        $('.sliderSlogan:eq(' + i + ')').fadeIn(600).siblings().fadeOut(400);
         var $temp = $('.photoContainer li:eq(' + i + ')');
         // $temp.addClass("onShow").siblings().removeClass("onShow");
-        $temp.fadeIn(500).siblings().fadeOut(500);
+        $temp.fadeIn(600).siblings().fadeOut(400);
     }
     //定时器，定时进行切换
     // $('.img-slider-content').hover(function() {

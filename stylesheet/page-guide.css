@@ -48,10 +48,9 @@ main li img {
 }
 
 article {
-    width: 1120px;
+    width: 1440px;
     height: 230px;
     margin: 20px 10% 0 10%;
-    background: #fff;
 }
 
 .articleTitle {
@@ -67,16 +66,19 @@ article {
     line-height: 32px;
 }
 
-article aside li {
-    float: left;
-    width: 134px;
-    height: 58px;
-    margin: 16px 12.1px;
+article aside {
+    width: 280px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
 }
 
-article aside li img {
+article aside {
+    float: left;
+}
+
+article aside li {
     width: 134px;
-    height: 58px;
+    margin-bottom: 12.1px;
 }
 
 footer {
@@ -127,10 +129,36 @@ span {
 }
 
 .headerAsideLatest {
+    background: #52A3FF;
     margin-top: 20px;
     border-radius: 4px;
-    background: #F9BE04;
     width: 92px;
     height: 32px;
     text-align: center;
+}
+
+article {
+    height: 400px;
+}
+
+.focusContent {
+    width: 920px;
+    height: 400px;
+}
+
+.menuBar {
+    width: 90%;
+    border-bottom: 2px solid #F9BE04;
+}
+
+.menuBar li.onchoose {
+    background: #F9BE04;
+}
+
+.menuBar a {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #363636;
+    line-height: 40px
 }
