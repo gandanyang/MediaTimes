@@ -66,12 +66,7 @@ a {
     padding-right: 25px;
 }
 
-
-/* .navItem {
-    width: 120px;
-} */
-
-.navItem:hover {
+.navItem.active {
     height: 57px;
     cursor: pointer;
     border-bottom: 3px solid #F9BE04;
@@ -142,7 +137,6 @@ header {
 }
 
 .sildePic {
-    float: left;
     width: 430px;
     height: 325px;
 }
@@ -193,6 +187,7 @@ header {
 }
 
 .sliderSlogan {
+    z-index: 5;
     text-align: center;
     top: 277px;
     height: 48px;
@@ -238,15 +233,24 @@ header aside {
     float: left;
     width: 280px;
     height: 320px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
 }
 
-header aside li {
+main aside {
+    background: #fff;
+    overflow: hidden;
+    float: left;
+    width: 280px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+aside li {
     white-space: nowrap;
     width: 280px;
     overflow: hidden;
 }
 
-header aside a {
+aside a {
     font-size: 14px;
     color: #363636;
     line-height: 25px;

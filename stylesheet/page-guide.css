@@ -67,14 +67,14 @@ article {
     line-height: 32px;
 }
 
-article li {
+article aside li {
     float: left;
     width: 134px;
     height: 58px;
     margin: 16px 12.1px;
 }
 
-article li img {
+article aside li img {
     width: 134px;
     height: 58px;
 }
