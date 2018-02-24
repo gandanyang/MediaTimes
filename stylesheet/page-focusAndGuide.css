@@ -50,7 +50,7 @@ main li img {
 article {
     width: 1440px;
     height: 230px;
-    margin: 20px 10% 0 10%;
+    margin: 20px 10% 69px 10%;
 }
 
 .articleTitle {
@@ -119,15 +119,6 @@ span {
     line-height: 74px;
 }
 
-.headerAsideMonthly {
-    margin-top: 20px;
-    border-radius: 4px;
-    background: #F9BE04;
-    width: 92px;
-    height: 32px;
-    text-align: center;
-}
-
 .headerAsideLatest {
     background: #52A3FF;
     margin-top: 20px;
@@ -141,7 +132,7 @@ article {
     height: 400px;
 }
 
-.focusContent {
+.focusContainer {
     width: 920px;
     height: 400px;
 }
@@ -156,9 +147,24 @@ article {
 }
 
 .menuBar a {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 14px;
     color: #363636;
     line-height: 40px
+}
+
+.focusContent li {
+    padding-top: 16.6px;
+}
+
+.focusContent a,
+.focusContent span {
+    font-size: 14px;
+    color: #363636;
+    line-height: 20px;
+}
+
+.more {
+    color: #206698 !important;
 }

@@ -619,6 +619,10 @@ select {
     padding-right: 100px;
 }
 
+.db {
+    display: block
+}
+
 .inb {
     display: inline-block;
 }

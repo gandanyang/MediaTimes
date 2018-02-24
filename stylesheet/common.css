@@ -272,6 +272,15 @@ aside a {
     line-height: 32px;
 }
 
+.headerAsideMonthly {
+    margin-top: 20px;
+    border-radius: 4px;
+    background: #206698;
+    width: 92px;
+    height: 32px;
+    text-align: center;
+}
+
 .headerAsideSurvey {
     border-radius: 4px;
     background: #F9BE04;
