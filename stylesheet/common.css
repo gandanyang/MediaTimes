@@ -132,7 +132,7 @@ header {
 
 .sidePicContent {
     margin-left: 5px;
-    width: 430px;
+    width: 800px;
     height: 325px;
 }
 
@@ -277,19 +277,19 @@ aside a {
     content: none;
 }
 
+.headerAsideMonthly a,
+.headerAsideLatest a,
+.headerAsideSurvey a,
+.headerAsideNotice a {
+    line-height: 32px;
+}
+
 .headerAsideNotice {
     border-radius: 4px;
     background: #206698;
     width: 92px;
     height: 32px;
     text-align: center;
-}
-
-.headerAsideMonthly a,
-.headerAsideLatest a,
-.headerAsideSurvey a,
-.headerAsideNotice a {
-    line-height: 32px;
 }
 
 .headerAsideMonthly {

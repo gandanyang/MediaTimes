@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     $(".photoContainer li").eq(0).show();
     $('.focusContent:eq(0)').show();
     $('.menuBar li').on('click', function() {
@@ -41,6 +40,7 @@ $(document).ready(function() {
         index--;
         index = index < 0 ? 3 : index;
         picIonshow(index);
+        // return (index);
     }
     $(".sliderNav .next").on('click', moveNext);
     $(".sliderNav .prev").on('click', movePrev);
@@ -49,5 +49,6 @@ $(document).ready(function() {
         index++;
         index = index > 3 ? 0 : index;
         picIonshow(index);
+        // return (index);
     }
 });
